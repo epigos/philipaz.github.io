@@ -32,12 +32,6 @@ jobs:
           node-version: "20"
           cache: "pnpm"
 
-      - name: Setup Pages
-        id: setup_pages
-        uses: actions/configure-pages@v4
-        with:
-          static_site_generator: next
-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
@@ -49,7 +43,7 @@ jobs:
         run: pnpm build
         env:
           GITHUB_PAGES: true
-          NEXT_PUBLIC_PAGES_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
+          NEXT_PUBLIC_PAGES_BASE_PATH: "/"
 
       - name: Verify build output
         run: |
