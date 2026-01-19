@@ -65,6 +65,8 @@ export function Header() {
                                     "px-4 py-2 text-sm font-medium rounded-lg transition-colors",
                                     "text-muted-foreground hover:text-foreground hover:bg-accent",
                                 )}
+                                target={item.target}
+                                rel={item.target ? "noopener noreferrer" : undefined}
                             >
                                 {item.name}
                             </a>

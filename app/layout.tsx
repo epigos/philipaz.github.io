@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer";
 import { siteConfig } from "@/data/site";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { appConfig } from "@/lib/config";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -79,11 +80,11 @@ export const metadata: Metadata = {
         },
     },
     icons: {
-        icon: "/favicon.ico",
-        shortcut: "/favicon-16x16.png",
-        apple: "/apple-touch-icon.png",
+        icon: `${appConfig.basePath}/favicon.ico`,
+        shortcut: `${appConfig.basePath}/favicon-16x16.png`,
+        apple: `${appConfig.basePath}/apple-touch-icon.png`,
     },
-    manifest: "/site.webmanifest",
+    manifest: `${appConfig.basePath}/site.webmanifest`,
 };
 
 export default function RootLayout({

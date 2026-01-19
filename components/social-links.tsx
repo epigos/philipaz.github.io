@@ -74,6 +74,7 @@ export function SocialLinks({
                             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                         )}
                         aria-label={label}
+                        title={label}
                     >
                         <Icon size={iconSize} />
                         {showLabels && (

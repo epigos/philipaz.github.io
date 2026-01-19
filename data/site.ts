@@ -36,6 +36,7 @@ export const navigation = [
     { name: "GitHub", href: "#github" },
     { name: "Testimonials", href: "#testimonials" },
     { name: "Contact", href: "#contact" },
+    { name: "Blog", href: "https://medium.com/@epigos", target: "_blank" },
 ];
 
 export const techStack = {
@@ -480,7 +481,7 @@ export const testimonials = [
         author: "Debra Duggan",
         role: "IT Data Manager",
         company: "Capital Group | Ex-LendInvest",
-        avatar: "/testimonials/default.jpg",
+        avatar: "",
     },
     {
         id: "2",
@@ -488,6 +489,6 @@ export const testimonials = [
         author: "Morgan Sowden",
         role: "CoFounder & CTPO at journalist.net",
         company: "Ex-Facebook | Ex-Octopus",
-        avatar: "/testimonials/default.jpg",
+        avatar: "",
     },
 ];
