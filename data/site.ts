@@ -90,6 +90,29 @@ export const techStack = {
 
 export const projectHighlights = [
     {
+        id: "7",
+        name: "Ghana Data MCP",
+        context: "Open Source",
+        year: "2026",
+        problem:
+            "AI assistants can't reliably access Ghana's public market and economic data, which is scattered across websites, PDFs and statistical portals.",
+        solution:
+            "Built a free remote MCP server on Cloudflare Workers exposing 15 read-only tools over the Ghana Stock Exchange, Bank of Ghana, Ghana Statistical Service and IMF data — usable from Claude, ChatGPT, Cursor or any MCP client, with no API key.",
+        impact: "Brings decades of Ghana data (FX rates to 1996, GSE prices to 2007, ~130 IMF indicators) into AI tools, with every result stamped for freshness (live, cache, stale-cache or static seed).",
+        technologies: [
+            "TypeScript",
+            "MCP",
+            "Cloudflare Workers",
+            "Streamable HTTP",
+            "AI Agents",
+        ],
+        links: {
+            demo: "https://ghana-data-mcp.epigos.workers.dev/",
+            github: "https://github.com/epigos/ghana-data-mcp",
+        },
+        featured: true,
+    },
+    {
         id: "1",
         name: "Epigos AI – No-Code Vision Platform",
         context: "Founder Project",

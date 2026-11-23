@@ -96,23 +96,23 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <ThemeProvider
-                attribute="class"
-                defaultTheme="system"
-                enableSystem
-                disableTransitionOnChange
+            <body
+                className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
             >
-                <body
-                    className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="system"
+                    enableSystem
+                    disableTransitionOnChange
                 >
                     <div className="relative min-h-screen flex flex-col">
                         <Header />
                         <main className="flex-1">{children}</main>
                         <Footer />
                     </div>
-                </body>
+                </ThemeProvider>
                 <GoogleAnalytics gaId={appConfig.googleAnalyticsId} />
-            </ThemeProvider>
+            </body>
         </html>
     );
 }
